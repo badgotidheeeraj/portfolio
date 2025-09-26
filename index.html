@@ -1,213 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dheeraj Kumar Singh | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      .nav-link {
-        position: relative;
-      }
-      .nav-link::after {
-        content: "";
-        position: absolute;
-        width: 0%;
-        height: 2px;
-        left: 0;
-        bottom: -3px;
-        background: linear-gradient(to right, #ec4899, #8b5cf6);
-        transition: width 0.3s;
-      }
-      .nav-link:hover::after {
-        width: 100%;
-      }
-      .social-hover:hover {
-        transform: scale(1.2) rotate(5deg);
-        transition: all 0.3s ease-in-out;
-      }
-      .animate-gradient {
-        background-size: 200% 200%;
-        animation: gradientMove 4s ease infinite;
-      }
-      @keyframes gradientMove {
-        0% {
-          background-position: 0% 50%;
+        html {
+            scroll-behavior: smooth;
         }
-        50% {
-          background-position: 100% 50%;
+
+        .nav-link {
+            position: relative;
         }
-        100% {
-          background-position: 0% 50%;
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            left: 0;
+            bottom: -3px;
+            background: linear-gradient(to right, #ec4899, #8b5cf6);
+            transition: width 0.3s;
         }
-      }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .social-hover:hover {
+            transform: scale(1.2) rotate(5deg);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradientMove 4s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     </style>
-  </head>
-  <body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-gray-200 font-sans">
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-gray-200 font-sans">
     <!-- Navbar -->
     <header class="sticky top-0 z-50 bg-black/30 backdrop-blur-md shadow-lg">
-      <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        <div class="text-2xl font-extrabold">
-          <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient">Dheeraj.dev</span>
-        </div>
-        <ul class="hidden md:flex space-x-6 font-medium items-center">
-          <li><a href="#about" class="nav-link flex items-center space-x-1"><i class="fas fa-user"></i><span>About</span></a></li>
-          <li><a href="#skills" class="nav-link flex items-center space-x-1"><i class="fas fa-code"></i><span>Skills</span></a></li>
-          <li><a href="#experience" class="nav-link flex items-center space-x-1"><i class="fas fa-briefcase"></i><span>Experience</span></a></li>
-          <li><a href="#projects" class="nav-link flex items-center space-x-1"><i class="fas fa-project-diagram"></i><span>Projects</span></a></li>
-          <li><a href="#education" class="nav-link flex items-center space-x-1"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
-          <li><a href="#contact" class="nav-link flex items-center space-x-1"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
-        </ul>
-        <button class="md:hidden text-white text-xl">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
+        <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <div class="text-2xl font-extrabold">
+                <span
+                    class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient">Dheeraj.dev</span>
+            </div>
+            <ul class="hidden md:flex space-x-6 font-medium items-center">
+                <li><a href="#about" class="nav-link flex items-center space-x-1"><i
+                            class="fas fa-user"></i><span>About</span></a></li>
+                <li><a href="#skills" class="nav-link flex items-center space-x-1"><i
+                            class="fas fa-code"></i><span>Skills</span></a></li>
+                <li><a href="#experience" class="nav-link flex items-center space-x-1"><i
+                            class="fas fa-briefcase"></i><span>Experience</span></a></li>
+                <li><a href="#projects" class="nav-link flex items-center space-x-1"><i
+                            class="fas fa-project-diagram"></i><span>Projects</span></a></li>
+                <li><a href="#education" class="nav-link flex items-center space-x-1"><i
+                            class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+                <li><a href="#contact" class="nav-link flex items-center space-x-1"><i
+                            class="fas fa-envelope"></i><span>Contact</span></a></li>
+            </ul>
+            <button class="md:hidden text-white text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
     </header>
 
     <!-- Hero -->
     <section class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-20" id="about">
-      <div class="md:w-1/2">
-        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-          Hello, I'm <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient">Dheeraj</span> 👋
-        </h1>
-        <p class="text-lg md:text-xl mb-8">
-          Python/Django Developer with 3+ years of experience in RESTful APIs, machine learning model integration, and scalable back-end systems. Always learning, always improving.
-        </p>
-        <div class="flex space-x-4 mb-8">
-          <a href="https://github.com/badgotidheeeraj" target="_blank" class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/dheeraj-kumar-singh" target="_blank" class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:badgotidheeraj@gmail.com" class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
-            <i class="fas fa-envelope"></i>
-          </a>
+        <div class="md:w-1/2">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                Hello, I'm <span
+                    class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient">Dheeraj</span>
+                👋
+            </h1>
+            <p class="text-lg md:text-xl mb-8">
+                Python/Django Developer with 3+ years of experience in RESTful APIs, machine learning model integration,
+                and scalable back-end systems. Always learning, always improving.
+            </p>
+            <div class="flex space-x-4 mb-8">
+                <a href="https://github.com/badgotidheeeraj" target="_blank"
+                    class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/dheeraj-kumar-singh" target="_blank"
+                    class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:badgotidheeraj@gmail.com"
+                    class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <a href="#contact"
+                class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg">
+                Contact Me
+            </a>
         </div>
-        <a href="#contact" class="inline-block bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg">
-          Contact Me
-        </a>
-      </div>
-      <div class="md:w-1/2 flex justify-center mt-10 md:mt-0 relative">
-        <!-- Blob frame -->
-        <div class="absolute -z-10 w-72 h-72 md:w-[28rem] md:h-[28rem] bg-gradient-to-r from-pink-500/50 to-purple-600/50 rounded-full blur-3xl animate-pulse"></div>
-        <img src="image/linked.png" alt="Dheeraj" class="w-80 h-full md:w-[28rem] rounded-3xl shadow-2xl" />
-      </div>
+        <div class="md:w-1/2 flex justify-center mt-10 md:mt-0 relative">
+            <!-- Blob frame -->
+            <div
+                class="absolute -z-10 w-72 h-72 md:w-[28rem] md:h-[28rem] bg-gradient-to-r from-pink-500/50 to-purple-600/50 rounded-full blur-3xl animate-pulse">
+            </div>
+            <img src="image/linked.png" alt="Dheeraj" class="w-80 h-full md:w-[28rem] rounded-3xl shadow-2xl" />
+        </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-14">Technical Skills</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl hover:scale-105 transition">
-            <h3 class="font-semibold text-pink-400 mb-4 text-xl"><i class="fas fa-code mr-2"></i>Languages & Frameworks</h3>
-            <p>Python, Django REST Framework, Flask, React, JavaScript, Bootstrap/CSS</p>
-          </div>
-          <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl hover:scale-105 transition">
-            <h3 class="font-semibold text-pink-400 mb-4 text-xl"><i class="fas fa-robot mr-2"></i>Data & ML</h3>
-            <p>Pandas, NumPy, scikit-learn, transformers, OpenCV, NLP</p>
-          </div>
-          <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl hover:scale-105 transition">
-            <h3 class="font-semibold text-pink-400 mb-4 text-xl"><i class="fas fa-database mr-2"></i>Databases & Tools</h3>
-            <p>MySQL, SQLAlchemy, Docker, Linux, Kafka, Celery+Redis, Postman, GitHub</p>
-          </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-14">Technical Skills</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl hover:scale-105 transition">
+                    <h3 class="font-semibold text-pink-400 mb-4 text-xl"><i class="fas fa-code mr-2"></i>Languages &
+                        Frameworks</h3>
+                    <p>Python, Django REST Framework, Flask, React, JavaScript, Bootstrap/CSS</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl hover:scale-105 transition">
+                    <h3 class="font-semibold text-pink-400 mb-4 text-xl"><i class="fas fa-robot mr-2"></i>Data & ML</h3>
+                    <p>Pandas, NumPy, scikit-learn, transformers, OpenCV, NLP</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl hover:scale-105 transition">
+                    <h3 class="font-semibold text-pink-400 mb-4 text-xl"><i class="fas fa-database mr-2"></i>Databases &
+                        Tools</h3>
+                    <p>MySQL, SQLAlchemy, Docker, Linux, Kafka, Celery+Redis, Postman, GitHub</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Experience -->
-       <section id="experience" class="py-16">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-white mb-10">Professional Experience</h2>
-        <div class="space-y-6">
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold text-pink-400">MP2IT – Mathura, India (Software Developer | Feb 2022 – Present)</h3>
-            <ul class="list-disc pl-5 space-y-1">
-              <li>Developed and maintained scalable RESTful APIs using Django REST Framework and Flask.</li>
-              <li>Built automated data pipelines with Pandas and NumPy for large-scale processing.</li>
-              <li>Implemented secure authentication (JWT, OAuth 2.0, Microsoft SSO).</li>
-              <li>Configured Celery + Redis for asynchronous task execution.</li>
-              <li>Integrated ML models (Transformers) into Django REST APIs for real-time predictions.</li>
-            </ul>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold text-pink-400">Tower Vision Pvt Ltd – Delhi, India (Network Operations Engineer | Feb 2021 – Feb 2022)</h3>
-            <ul class="list-disc pl-5 space-y-1">
-              <li>Monitored network alarms and ensured prompt resolution.</li>
-              <li>Escalated critical incidents and tracked resolutions.</li>
-              <li>Performed regular health and performance checks.</li>
-            </ul>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold text-pink-400">VVDN Technology Pvt Ltd – Delhi, India (Hardware/Embedded Intern | Nov 2019 – Dec 2020)</h3>
-            <ul class="list-disc pl-5 space-y-1">
-              <li>Researched and analyzed technical issues related to electronic components.</li>
-              <li>Assembled and tested electronic prototypes ensuring quality standards.</li>
-              <li>Supported PCB layout and hardware validation/verification.</li>
-            </ul>
-          </div>
+    <section id="experience" class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-white mb-10">Professional Experience</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-pink-400">MP2IT – Mathura, India (Software Developer | Feb
+                        2022 – Present)</h3>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Developed and maintained scalable RESTful APIs using Django REST Framework and Flask.</li>
+                        <li>Built automated data pipelines with Pandas and NumPy for large-scale processing.</li>
+                        <li>Implemented secure authentication (JWT, OAuth 2.0, Microsoft SSO).</li>
+                        <li>Configured Celery + Redis for asynchronous task execution.</li>
+                        <li>Integrated ML models (Transformers) into Django REST APIs for real-time predictions.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-pink-400">Tower Vision Pvt Ltd – Delhi, India (Network
+                        Operations Engineer | Feb 2021 – Feb 2022)</h3>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Monitored network alarms and ensured prompt resolution.</li>
+                        <li>Escalated critical incidents and tracked resolutions.</li>
+                        <li>Performed regular health and performance checks.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-pink-400">VVDN Technology Pvt Ltd – Delhi, India
+                        (Hardware/Embedded Intern | Nov 2019 – Dec 2020)</h3>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Researched and analyzed technical issues related to electronic components.</li>
+                        <li>Assembled and tested electronic prototypes ensuring quality standards.</li>
+                        <li>Supported PCB layout and hardware validation/verification.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
 
     <!-- Projects -->
-    <section id="projects" class="py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-14">Projects</h2>
-        <div class="grid md:grid-cols-2 gap-10">
-          <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm hover:scale-105 transition">
-            <h3 class="text-2xl font-semibold text-pink-400 mb-2"><i class="fas fa-book mr-2"></i>Research Paper Style Detection</h3>
-            <p>Web app built with Django + NLP to automatically detect writing styles in uploaded DOCX research papers.</p>
-          </div>
-          <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm hover:scale-105 transition">
-            <h3 class="text-2xl font-semibold text-pink-400 mb-2"><i class="fas fa-utensils mr-2"></i>DineDesk</h3>
-            <p>A table booking app built with React + Django REST APIs. Features real-time restaurant & table availability.</p>
-          </div>
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-16">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div
+                    class="bg-white/10 p-8 rounded-3xl backdrop-blur-md shadow-lg hover:scale-105 transition-transform transform cursor-pointer">
+                    <h3 class="text-2xl font-semibold text-pink-400 mb-3 flex items-center">
+                        <i class="fas fa-book mr-3"></i>Research Paper Style Detection
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Web app built with Django + NLP to automatically detect writing styles in uploaded DOCX research
+                        papers.
+                    </p>
+                </div>
+                <div
+                    class="bg-white/10 p-8 rounded-3xl backdrop-blur-md shadow-lg hover:scale-105 transition-transform transform cursor-pointer">
+                    <h3 class="text-2xl font-semibold text-pink-400 mb-3 flex items-center">
+                        <i class="fas fa-utensils mr-3"></i>DineDesk
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        A table booking app built with React + Django REST APIs. Features real-time restaurant & table
+                        availability.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="bg-white/10 p-10 rounded-3xl backdrop-blur-md shadow-lg hover:scale-105 transition-transform transform max-w-lg mx-auto cursor-pointer">
+                <h3 class="text-3xl font-extrabold text-pink-500 mb-5 flex items-center">
+                    <a href="https://aquamarine-klepon-c65b54.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-barcode mr-4"></i>BarCodeBuilder
+                    </a>
+                </h3>
+
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    Create barcodes online quickly and easily.
+                </p>
+            </div>
         </div>
-      </div>
     </section>
+
 
     <!-- Education -->
     <section id="education" class="bg-black/40 py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-14">Education</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm">
-            <h3 class="text-2xl font-semibold text-pink-400"><i class="fas fa-graduation-cap mr-2"></i>B.Tech (Computer Science)</h3>
-            <p>J.S. University, Firozabad, UP, India (Aug 2022 – Present)</p>
-          </div>
-          <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm">
-            <h3 class="text-2xl font-semibold text-pink-400"><i class="fas fa-graduation-cap mr-2"></i>Diploma (Computer Science)</h3>
-            <p>GLA University</p>
-          </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-14">Education</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm">
+                    <h3 class="text-2xl font-semibold text-pink-400"><i class="fas fa-graduation-cap mr-2"></i>B.Tech
+                        (Computer Science)</h3>
+                    <p>J.S. University, Firozabad, UP, India (Aug 2022 – Present)</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-sm">
+                    <h3 class="text-2xl font-semibold text-pink-400"><i class="fas fa-graduation-cap mr-2"></i>Diploma
+                        (Computer Science)</h3>
+                    <p>GLA University</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="py-20">
-      <div class="max-w-3xl mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
-        <p class="mb-4">Email: <a href="mailto:badgotidheeraj@gmail.com" class="text-pink-400 hover:underline">badgotidheeraj@gmail.com</a></p>
-        <p class="mb-6">Mobile: <span class="text-pink-400">+91-7500032646</span></p>
-        <div class="flex justify-center space-x-4">
-          <a href="https://linkedin.com/in/dheeraj-kumar-singh" target="_blank" class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/badgotidheeeraj" target="_blank" class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="mailto:badgotidheeraj@gmail.com" class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
-            <i class="fas fa-envelope"></i>
-          </a>
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+            <p class="mb-4">Email: <a href="mailto:badgotidheeraj@gmail.com"
+                    class="text-pink-400 hover:underline">badgotidheeraj@gmail.com</a></p>
+            <p class="mb-6">Mobile: <span class="text-pink-400">+91-7500032646</span></p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://linkedin.com/in/dheeraj-kumar-singh" target="_blank"
+                    class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/badgotidheeeraj" target="_blank"
+                    class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:badgotidheeraj@gmail.com"
+                    class="bg-gray-700 hover:bg-pink-500 text-white w-12 h-12 rounded-full flex items-center justify-center social-hover">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </div>
-      </div>
     </section>
-  </body>
+</body>
+
 </html>
